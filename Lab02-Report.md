@@ -6,6 +6,13 @@
 
 แสดง Control `title` และ `Detail`
 
+<div>
+<img src="image/KKU_NKC3.JPG" width="250"/>
+</div>
+
+<br/>
+
+
 ```xml
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -128,11 +135,25 @@
 
 ```xml
 
+<!-- ยกตัวอย่าง -->
+<!-- RelativeLayout คือ เครื่องมือที่ช่วยจัดเรียงหน้า UI ให้อย่างที่เราต้องการ 
+จาก xml ข้างบนจะเห็นได้ว่า ปุ่ม Button บันทึก จะมีความสัมพันธ์กับ EditText ชื่อว่า nickname คือ  ปุ่ม Button บันทึก จะอยู่ใต้ EditText ชื่อว่า nickname 
+เพราะว่าผมได้เชื่อมความสัมพันธ์กัน โดยใช้คำสั่ง layout_below คือ Button อยู่ข้างล่าง nickname และตั้ง marginTop เพื่อเว้นระยะห่างจาก nickname ลงมา
+ถ้ามีการเคลื่อนย้าน EditText ชื่อว่า nickname ปุ่ม Button ก็จะตามไปทุกที่แต่ ต้องยึดไว้ 2 ทาง -->
+android:layout_below="@+id/nickname"   
+android:layout_marginTop="117dp"
 ```
 
 ## Linear Layout
 
 แสดง Control `to`, `subject`, `tag` และ `message`
+
+<div>
+<img src="image/KKU_NKC2.JPG" width="250"/>
+</div>
+
+<br/>
+
 
 ```xml
     <LinearLayout
@@ -192,12 +213,29 @@
 อธิบายความแตกต่างระหว่าง vertical และ horizontal orientation
 
 ```
-// คำตอบ
+Vertical  Orientation  คือ layout ที่ทำให้เราจัดเรียงหน้าตา UI แนวตั้ง
+          ____________________________________
+          ____________________________________
+          ____________________________________
+
+Horizontal  Orientation  คือ  layout ที่ทำให้เราจัดเรียงหน้าตา UI แนวนอน
+
+          |           ||          ||          |
+          |           ||          ||          |
+          |           ||          ||          |
+
 ```
 
 ## Constrant Layout
 
 จงออกแบบและสร้างหน้า Constrant layout สำหรับแสดงข้อมูลนักศึกษา ประกอบไปด้วย รูปโปรไฟล์ รูปพื้นหลัง ชื่อ-นามสกุล รหัสนักศึกษา และเกรดเฉลี่ยรวม
+
+<div>
+<img src="image/KKU_NKC1.JPG" width="250"/>
+</div>
+
+<br/>
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
