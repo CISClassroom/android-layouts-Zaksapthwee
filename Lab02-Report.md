@@ -140,8 +140,16 @@
 จาก xml ข้างบนจะเห็นได้ว่า ปุ่ม Button บันทึก จะมีความสัมพันธ์กับ EditText ชื่อว่า nickname คือ  ปุ่ม Button บันทึก จะอยู่ใต้ EditText ชื่อว่า nickname 
 เพราะว่าผมได้เชื่อมความสัมพันธ์กัน โดยใช้คำสั่ง layout_below คือ Button อยู่ข้างล่าง nickname และตั้ง marginTop เพื่อเว้นระยะห่างจาก nickname ลงมา
 ถ้ามีการเคลื่อนย้าน EditText ชื่อว่า nickname ปุ่ม Button ก็จะตามไปทุกที่แต่ ต้องยึดไว้ 2 ทาง -->
-android:layout_below="@+id/nickname"   
-android:layout_marginTop="117dp"
+
+<!-- Relative ที่อ้างอิงกับ View ด้วยกันเอง -->
+        android:layout_below="@+id/nickname"   
+        android:layout_marginTop="117dp"
+
+<!-- Relative แบบอ้างอิงกับ Parent  -->
+        android:layout_alignParentStart="true"   <!-- กำหนดให้ View ไปอยู่ในตำแหน่งเริ่มต้นของ Parent -->
+        android:layout_alignParentTop="true"   <!-- บอกให้ View ไปอยู่ตำแหน่งด้านบนของ Parent-->
+        android:layout_alignParentEnd="true"   <!-- กำหนดให้ View ไปอยู่ในตำแหน่งสิ้นสุดของ Parent -->
+
 ```
 
 ## Linear Layout
