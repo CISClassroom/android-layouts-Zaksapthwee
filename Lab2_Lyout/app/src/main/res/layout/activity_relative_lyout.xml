@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Relative_lyout">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="228dp"
+        android:fontFamily="@font/kanit"
+        android:text="ข้อมูลส่วนตัว"
+        android:textColor="#FA000000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:fontFamily="@font/kanit"
+        android:inputType="textPersonName"
+        android:hint="ชื่อ" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:layout_alignStart="@+id/fname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:fontFamily="@font/kanit"
+        android:inputType="textPersonName"
+        android:hint="นามสกุล" />
+
+    <EditText
+        android:id="@+id/lname2"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname"
+        android:layout_alignStart="@+id/lname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:fontFamily="@font/kanit"
+        android:inputType="textPersonName"
+        android:hint="ชื่อเล่น" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname2"
+        android:layout_alignStart="@+id/lname2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/kanit"
+        android:text="เพศ"
+        android:textColor="#F2000000"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:fontFamily="@font/kanit"
+        android:text="ชาย" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignStart="@+id/radioButton"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/kanit"
+        android:text="หญิง" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="117dp"
+        android:fontFamily="@font/kanit"
+        android:text="บันทึก" />
+
+</RelativeLayout>

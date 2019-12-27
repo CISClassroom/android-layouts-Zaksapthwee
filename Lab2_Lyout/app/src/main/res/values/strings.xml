@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab2_Lyout</string>
+    <string name="name_profile">Zack Sapthawee</string>
+    <string name="name">ชื่อ :</string>
+    <string name="nameuse">นายทรัพย์ทวี เพ็ชรสาย</string>
+    <string name="idstudentname">รหัสนักศึกษา :</string>
+    <string name="idstudent">603410203-8</string>
+    <string name="gradename">เกรดเฉลี่ย :</string>
+    <string name="grade">3.19</string>
+</resources>
